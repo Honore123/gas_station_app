@@ -1,0 +1,3 @@
+ Keystore password: b3bd9625089e47499d3b31bd10a87c0d
+  Key alias:         QGgwMS9Oeml6YQ==
+  Key password:      1d6ced890d054f3d808877e05cd937db
