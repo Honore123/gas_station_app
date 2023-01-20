@@ -4,12 +4,12 @@ import {
   Text,
   StyleSheet,
   ScrollView,
-  Picker,
   Alert,
   Modal,
   ActivityIndicator,
   TouchableWithoutFeedback,
 } from "react-native";
+import { Picker } from "@react-native-picker/picker";
 import { Card, Button, Input, Icon } from "react-native-elements";
 import { connect } from "react-redux";
 import { checkoutSale } from "../redux/ActionCreators";

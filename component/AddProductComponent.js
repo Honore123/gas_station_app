@@ -119,7 +119,7 @@ class AddProduct extends ValidationComponent {
     const { products } = this.props.products;
     return (
       <ScrollView>
-        <Card>
+        <Card containerStyle={styles.cardHolder}>
           {/* <View style={styles.pickerView}>
             <Picker
               selectedValue={this.state.product_id}
@@ -140,6 +140,18 @@ class AddProduct extends ValidationComponent {
           <Input
             placeholder="Barcode"
             keyboardType="number-pad"
+            inputContainerStyle={{
+              borderStyle: "solid",
+              borderColor: "#ced4da",
+              borderWidth: 1,
+              borderRadius: 15,
+              paddingLeft: 20,
+              height: 60,
+            }}
+            inputStyle={{
+              fontFamily: "Quicksand-Regular",
+              fontSize: 17,
+            }}
             value={this.state.barcode}
             onChangeText={(barcode) => this.setState({ barcode: barcode })}
             rightIcon={() => (
@@ -154,6 +166,18 @@ class AddProduct extends ValidationComponent {
           <Input
             placeholder="Quantity"
             keyboardType="number-pad"
+            inputContainerStyle={{
+              borderStyle: "solid",
+              borderColor: "#ced4da",
+              borderWidth: 1,
+              borderRadius: 15,
+              paddingLeft: 20,
+              height: 60,
+            }}
+            inputStyle={{
+              fontFamily: "Quicksand-Regular",
+              fontSize: 17,
+            }}
             maxLength={this.state.max_quantity}
             value={this.state.quantity}
             onChangeText={(quantity) =>
@@ -167,16 +191,30 @@ class AddProduct extends ValidationComponent {
             <View style={styles.containerBtn}>
               <Button
                 title="Cancel"
-                titleStyle={{ fontFamily: "Nunito" }}
+                titleStyle={{
+                  fontFamily: "Quicksand-Medium",
+                  color: "#FF0404",
+                  fontSize: 17,
+                }}
                 containerStyle={{ flex: 1 }}
-                buttonStyle={{ backgroundColor: "#FF0404" }}
+                buttonStyle={{
+                  backgroundColor: "#FFF",
+                  borderWidth: 1,
+                  borderColor: "#FF0404",
+                  borderRadius: 10,
+                  height: 60,
+                }}
               />
               <View style={{ flex: 1 }}></View>
               <Button
                 title="Add"
-                titleStyle={{ fontFamily: "Nunito" }}
+                titleStyle={{ fontFamily: "Quicksand-Medium", fontSize: 17 }}
                 containerStyle={{ flex: 1 }}
-                buttonStyle={{ backgroundColor: "#17A2B8" }}
+                buttonStyle={{
+                  backgroundColor: "#17A2B8",
+                  height: 60,
+                  borderRadius: 10,
+                }}
                 onPress={() => this.handleAddToCart()}
               />
             </View>
@@ -187,6 +225,11 @@ class AddProduct extends ValidationComponent {
   }
 }
 const styles = StyleSheet.create({
+  cardHolder: {
+    paddingTop: 30,
+    marginBottom: 30,
+    borderRadius: 15,
+  },
   container: {
     marginTop: 30,
     marginBottom: 20,

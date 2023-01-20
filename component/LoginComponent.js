@@ -57,12 +57,36 @@ class Login extends ValidationComponent {
           <Input
             placeholder="Email"
             textContentType="emailAddress"
+            inputContainerStyle={{
+              borderStyle: "solid",
+              borderColor: "#ced4da",
+              borderWidth: 1,
+              borderRadius: 15,
+              paddingLeft: 20,
+              height: 70,
+            }}
+            inputStyle={{
+              fontFamily: "Quicksand-Regular",
+              fontSize: 13,
+            }}
             value={this.state.value}
             onChangeText={(email) => this.setState({ email })}
           />
           <Input
             placeholder="Password"
             textContentType="password"
+            inputContainerStyle={{
+              borderStyle: "solid",
+              borderColor: "#ced4da",
+              borderWidth: 1,
+              borderRadius: 15,
+              paddingLeft: 20,
+              height: 70,
+            }}
+            inputStyle={{
+              fontFamily: "Quicksand-Regular",
+              fontSize: 13,
+            }}
             secureTextEntry={true}
             value={this.state.password}
             onChangeText={(password) => this.setState({ password })}
@@ -79,6 +103,7 @@ class Login extends ValidationComponent {
               title="Login"
               containerStyle={styles.loginBtnContainer}
               buttonStyle={styles.loginBtn}
+              titleStyle={{ fontSize: 17, fontFamily: "Quicksand-Medium" }}
               onPress={() => this.handleLogin()}
             />
           )}
@@ -105,6 +130,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 30,
+    fontFamily: "Quicksand-Bold",
   },
   inputContainer: {
     marginHorizontal: 20,
@@ -113,7 +139,8 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   loginBtn: {
-    borderRadius: 0,
+    borderRadius: 15,
+    height: 70,
     backgroundColor: "#17A2B8",
   },
 });

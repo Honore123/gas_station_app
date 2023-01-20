@@ -72,8 +72,8 @@ class Cart extends Component {
                 style={{
                   marginTop: 10,
                   fontSize: 17,
+                  fontFamily: "Quicksand-Medium",
                   color: "#9D9EA0",
-                  fontFamily: "Nunito",
                 }}
               >
                 Empty Cart
@@ -130,12 +130,12 @@ const styles = StyleSheet.create({
   listTitle: {
     marginBottom: 10,
     fontSize: 18,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   listSubTitle: {
     fontSize: 18,
     marginBottom: 5,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   listBtn: {
     borderRadius: 0,
@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
   floatListItemTitle: {
     marginBottom: 10,
     fontSize: 18,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   floatListItemBtn: {
     paddingHorizontal: 30,

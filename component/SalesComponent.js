@@ -40,7 +40,14 @@ class Sales extends Component {
           ) : (
             <View style={{ alignItems: "center", marginTop: "50%", flex: 1 }}>
               <Icon name="emoji-sad" type="entypo" size={30} color="#9D9EA0" />
-              <Text style={{ marginTop: 10, fontSize: 17, color: "#9D9EA0" }}>
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontSize: 17,
+                  fontFamily: "Quicksand-Medium",
+                  color: "#9D9EA0",
+                }}
+              >
                 No sales yet!
               </Text>
             </View>
@@ -63,11 +70,11 @@ const styles = StyleSheet.create({
   listTitle: {
     marginBottom: 10,
     fontSize: 18,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   listSubTitle: {
     fontSize: 18,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   listBtn: {
     borderRadius: 0,

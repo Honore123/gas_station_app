@@ -36,6 +36,7 @@ class NewExpenses extends ValidationComponent {
       description: { required: true },
     });
     if (!this.isFormValid()) {
+      this.setState({ isLoading: false });
       Alert.alert("Error!", "Please fill all fields", [
         {
           text: "OK",
@@ -73,22 +74,45 @@ class NewExpenses extends ValidationComponent {
             </View>
           </View>
         </Modal>
-        <Card>
+        <Card containerStyle={styles.cardHolder}>
           <Input
             placeholder="Amount"
             keyboardType="number-pad"
+            inputContainerStyle={{
+              borderStyle: "solid",
+              borderColor: "#ced4da",
+              borderWidth: 1,
+              borderRadius: 15,
+              paddingLeft: 20,
+              height: 60,
+            }}
+            inputStyle={{
+              fontFamily: "Quicksand-Regular",
+              fontSize: 17,
+            }}
             value={this.state.amount}
             onChangeText={(amount) => this.setState({ amount })}
             rightIcon={{
               type: "feather",
               name: "dollar-sign",
-              color: "#fff",
-              backgroundColor: "#17A2B8",
-              style: { padding: 10 },
+              color: "#17A2B8",
+              style: { padding: 10, borderRadius: 10 },
             }}
           />
           <Input
             placeholder="Activity"
+            inputContainerStyle={{
+              borderStyle: "solid",
+              borderColor: "#ced4da",
+              borderWidth: 1,
+              borderRadius: 15,
+              paddingLeft: 20,
+              height: 60,
+            }}
+            inputStyle={{
+              fontFamily: "Quicksand-Regular",
+              fontSize: 17,
+            }}
             value={this.state.description}
             onChangeText={(description) => this.setState({ description })}
           />
@@ -97,14 +121,30 @@ class NewExpenses extends ValidationComponent {
               <Button
                 title="Cancel"
                 containerStyle={{ flex: 1 }}
-                buttonStyle={{ backgroundColor: "#FF0404" }}
+                titleStyle={{
+                  fontFamily: "Quicksand-Medium",
+                  color: "#FF0404",
+                  fontSize: 17,
+                }}
+                buttonStyle={{
+                  backgroundColor: "#FFF",
+                  borderWidth: 1,
+                  borderColor: "#FF0404",
+                  borderRadius: 10,
+                  height: 60,
+                }}
                 onPress={() => this.props.navigation.navigate("Expenses")}
               />
               <View style={{ flex: 1 }}></View>
               <Button
                 title="Add"
                 containerStyle={{ flex: 1 }}
-                buttonStyle={{ backgroundColor: "#17A2B8" }}
+                titleStyle={{ fontFamily: "Quicksand-Medium", fontSize: 17 }}
+                buttonStyle={{
+                  backgroundColor: "#17A2B8",
+                  height: 60,
+                  borderRadius: 10,
+                }}
                 onPress={() => this.handleExpense()}
               />
             </View>
@@ -115,6 +155,10 @@ class NewExpenses extends ValidationComponent {
   }
 }
 const styles = StyleSheet.create({
+  cardHolder: {
+    paddingTop: 30,
+    borderRadius: 15,
+  },
   container: {
     marginTop: 30,
     marginBottom: 20,

@@ -69,7 +69,7 @@ const dashboard = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -105,7 +105,7 @@ const sales = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -134,7 +134,7 @@ const sales = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -163,7 +163,7 @@ const sales = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -192,7 +192,7 @@ const sales = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -221,7 +221,7 @@ const sales = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -257,7 +257,7 @@ const products = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -287,7 +287,7 @@ const products = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -323,7 +323,7 @@ const expenses = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -352,7 +352,7 @@ const expenses = ({ navigation }) => {
           headerTitleStyle: {
             alignSelf: "center",
             color: "#FFFFFF",
-            fontFamily: "Nunito",
+            fontFamily: "Quicksand-Medium",
           },
           headerLeft: () => (
             <Icon
@@ -387,7 +387,7 @@ const DrawerHeader = (props) => {
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
             <ActivityIndicator size="large" color="#181461" />
-            <Text style={{ fontFamily: "Nunito" }}>Logging out</Text>
+            <Text style={{ fontFamily: "Quicksand-Regular" }}>Logging out</Text>
           </View>
         </View>
       </Modal>
@@ -422,7 +422,7 @@ const DrawerHeader = (props) => {
           icon={({ color }) => (
             <Icon type="ant-design" name="logout" size={24} color={color} />
           )}
-          labelStyle={{ fontFamily: "Nunito" }}
+          labelStyle={{ fontFamily: "Quicksand-Medium" }}
           style={{ borderTopWidth: 1, borderTopColor: "#D9D9D9" }}
         />
       </SafeAreaView>
@@ -462,7 +462,7 @@ class Main extends Component {
             initialRouteName="Dashboard"
             drawerContentOptions={{
               activeTintColor: "#17A2B8",
-              labelStyle: { fontFamily: "Nunito" },
+              labelStyle: { fontFamily: "Quicksand-Medium" },
             }}
             drawerContent={(props) => (
               <DrawerHeader
@@ -543,13 +543,12 @@ const styles = StyleSheet.create({
   drawerHeaderText: {
     color: "#FFFFFF",
     fontSize: 20,
-    fontWeight: "bold",
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-SemiBold",
   },
   drawerNameText: {
     color: "#FFFFFF",
     fontSize: 15,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   drawerImage: {
     margin: 10,

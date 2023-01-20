@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Nziza",
-    "slug": "Nziza",
+    "name": "GPST",
+    "slug": "GPST",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon_nz.png",
@@ -15,7 +15,8 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.nzizacrafts.nziza"
     },
     "android": {
       "adaptiveIcon": {

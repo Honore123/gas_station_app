@@ -129,6 +129,7 @@ const styles = StyleSheet.create({
     borderRadius: 7,
     borderWidth: 0,
     elevation: 3,
+    paddingBottom: 20,
     marginBottom: 10,
   },
   cardTextHolder: {
@@ -142,24 +143,25 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     color: "#949494",
     fontSize: 18,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   cardNumberText: {
     marginBottom: 10,
     fontSize: 20,
     paddingTop: 5,
     flex: 1,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
   },
   cardNavigateBtnTitle: {
     fontSize: 17,
-    fontFamily: "Nunito",
+    fontFamily: "Quicksand-Medium",
     color: "#17A2B8",
     textTransform: "uppercase",
   },
   cardNavigateBtnContainer: {
-    paddingTop: 5,
+    marginTop: 10,
     flex: 1,
+    marginBottom: 20,
   },
 });
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
